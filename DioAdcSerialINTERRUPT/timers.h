@@ -12,6 +12,7 @@
 #define TIMSK    *((volatile u8_t *) (0x39))
 #define TOIE0   0
 
+void Timer_Initialize();
 void timer0_IntEnable();
 
 #endif /* TIMERS_H_ */
