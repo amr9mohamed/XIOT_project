@@ -21,7 +21,7 @@
 #define PortA_InitVal 0x00    //all as low not to burn anything
 #define PortB_InitVal 0x00    //all as low not to burn anything
 #define PortC_InitVal 0x00    //all as low not to burn anything
-#define PortD_InitVal 0x80    //all as low not to burn anything
+#define PortD_InitVal 0x00    //all as low not to burn anything
 
 ////////////////////////////////////////////////////////////////////////
 /*
