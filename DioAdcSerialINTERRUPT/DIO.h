@@ -15,13 +15,13 @@
 #define PortA_InitDir 0x00    //input  by default
 #define PortB_InitDir 0xFF    //output by default
 #define PortC_InitDir 0xFF    //output by default
-#define PortD_InitDir 0xFF    //OUTPUT by default
+#define PortD_InitDir 0xE0    //3 OUTPUT AND 4 INPUT
 
 //Initializing value of bits of ports
 #define PortA_InitVal 0x00    //all as low not to burn anything
 #define PortB_InitVal 0x00    //all as low not to burn anything
 #define PortC_InitVal 0x00    //all as low not to burn anything
-#define PortD_InitVal 0x00    //all as low not to burn anything
+#define PortD_InitVal 0x80    //all as low not to burn anything
 
 ////////////////////////////////////////////////////////////////////////
 /*
@@ -35,5 +35,6 @@ void DIO_SetBitValue(u8_t, bit_num, Bit_state);
 void DIO_InitPortForSevenSegment(u8_t, u8_t);
 void DIO_SetPortValueForSevenSegment(u8_t,u8_t);
 u8_t DIO_GetBitInputValue(u8_t,bit_num);
+void DIO_ToggleBit(u8_t port,bit_num number);
 
 #endif /* DIO_H_ */

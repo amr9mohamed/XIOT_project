@@ -121,3 +121,8 @@ u8_t DIO_GetBitInputValue(u8_t port ,bit_num number)
 {
 	return *(pins_value_array[port]) &= (1 << number);
 }
+
+void DIO_ToggleBit(u8_t port,bit_num number)
+{
+	*(ports_value_array[port]) ^= (1<<number);
+}
