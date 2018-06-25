@@ -78,6 +78,6 @@ ISR(TIMER0_OVF_vect)
 	counter++;
 	if (counter == 31*3) {// this 31*3 equivalent to 3 seconds
 		ADC_StartConversion(); // start the ADC  conversion after 3 seconds
-		counter =0;
+		counter = 0;
 	}
 }
