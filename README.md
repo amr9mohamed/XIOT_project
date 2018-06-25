@@ -7,7 +7,7 @@ This project works with interurpts like external, timer, serial and adc interrup
 kit used and Implementation:
 
 This project is done over atmega32 (Amit AVR kit)
-Nearly all of the functions are implemented jusgt the string functions are included from pre implemented header files
+Nearly all of the functions are implemented just the string functions are included from pre implemented header files
 
 
 Assumptions:
