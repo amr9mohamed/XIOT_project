@@ -9,6 +9,7 @@
 #include "Ports_definitions.h"
 #include "DIO.h"
 #include "ADC.h"
+#include "Ext_Int.h"
 #include <avr/interrupt.h>
 #define F_CPU 8000000UL
 #include <util/delay.h>
@@ -36,6 +37,9 @@ int main(){
 	ExtInt_Enable((u8_t)ZERO);
 	ExtINT_SenseControl((u8_t)TWO,(u8_t)ZERO);//on both edges for Interrupt 0 sense control
 	while(1){
+		/*
+		 * never ending loop
+		 */
 	}
 }
 
