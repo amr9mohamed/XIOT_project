@@ -74,7 +74,7 @@ ISR(ADC_vect)
 
 ISR(TIMER0_OVF_vect)
 {
-	static uint8_t counter=0;//static is used not to be lost when returning from the interrupt
+	static u8_t counter=0;//static is used not to be lost when returning from the interrupt
 	counter++;
 	if (counter == 31*3) {// this 31*3 equivalent to 3 seconds
 		ADC_StartConversion(); // start the ADC  conversion after 3 seconds
